@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Clone</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .full-container{
+            height: fit-content;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav div .navigation-list{
+            margin-top: 10px;
+            list-style-type: none;
+            display: flex;
+        }
+        nav div .navigation-list li{
+            color: #aaa;
+            margin: 8px;
+        }
+        .button{
+            background-color: transparent;
+            padding: 6px 10px;
+            border: none;
+            border-radius: 5px;
+            color: rgb(208, 20, 117);
+            border: 1px solid rgb(208, 20, 117);
+            font-size: 12px;
+            font-weight: 600;
+            margin: 0 7px 0 0;
+        }
+        .logo-button{
+            display: flex;
+            align-items: center;
+        }
+        .active{
+            color: #fff;
+            background-color: rgb(208, 20, 117);;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .title{
+            font-size: 50px;
+            margin-top: 80px;
+            margin-bottom: 10px;
+        }
+        .moto{
+            color: #777;
+            font-size: 20px;
+        }
+        .footer-list ul{
+            list-style-type: none;
+            display: flex;
+            gap: 7px;
+        }
+        .loan-button{
+            border: none;
+            background-color: white;
+            color: #777;
+            border-radius: 50px;
+            font-size: 15px;
+            padding: 10px;
+            box-shadow: 2px 4px 8px #444;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./a" alt="logo">
+        </div>
+        <div>
+            <ul class="navigation-list">
+                <li>RETAIL</li>
+                <li>SME</li>
+                <li>CORPORATE</li>
+                <li>ABOUT US</li>
+                <li>COVID 19</li>
+                <li>CAMPGAINS</li>
+            </ul>
+        </div>
+        <div class="logo-button">
+            <img src="search-icon.png" alt="search-icon" class="search">
+            <button class="button active" type="submit">Search</button>
+        </div>
+    </nav>
+    <div class="full-container">
+        <section class="left">
+            <div class="title-container">
+                <h1 class="title">Chase Your <br>Dream with us</h1>
+            </div>
+            <div class="moto-container">
+                <p class="moto">The harder you work for something, the<br> greater you'll feel when you achieve it.</p>
+            </div>
+            <div class="button-container">
+                <button class="button active" type="submit">APPLY ONLINE</button>
+                <button class="button" type="submit">LOAN CALCULATOR</button>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li><img src="assphone.png" alt="call-logo">1659 |</li>
+                    <li><img src="facebook.png" alt="Facebook"></li>
+                    <li><img src="youtube.png" alt="YouTube"></li>
+                    <li><img src="linkedin.png" alt="LinkedIn"></li>
+                    <li><img src="instagram.png" alt="Instagram"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="right">
+            <div class="logo-button">
+                <button class="loan-button"><span><img src="car.png" alt="Car-logo"></span>Car loan</button>
+            </div>
+            <div class="logo-button">
+                <button class="loan-button"><img src="House.png" alt="House-logo">Home Loan</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
